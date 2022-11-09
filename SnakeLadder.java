@@ -13,6 +13,11 @@ public class SnakeLadder {
     System.out.println("Dice Number =" + " " + diceRoll);
      */
 
+  //UC2=The Player rolls the die to get a number between 1 to 6.
+    diceRoll = (byte) ((byte) (Math.random() * 6) + 1);
+
+
+    System.out.println("Dice Number =" + " " + diceRoll);
 
 
 }
