@@ -10,12 +10,11 @@ public static void main(String args[]) {
     System.out.println("Starting Position of the Player = " + playerPosition);
 
     //UC2=The Player rolls the die to get a number between 1 to 6.
-    diceRoll = (byte) ((byte) (Math.random() * 6) + 1);
-    System.out.println("Starting Position of the Player = 0");
-
+    System.out.println();
+    
     for (int playerPosition = 1; playerPosition <= 100; playerPosition++) {
         diceRoll = (byte) ((byte) (Math.random() * 6));
-
+//UC3 player checks option
     System.out.println("Dice Number =" + " " + diceRoll);
         System.out.println("Dice Number =" + " " + diceRoll);
 
@@ -24,7 +23,11 @@ public static void main(String args[]) {
         playerPosition = (byte) (playerPosition - 1);
 
         System.out.println("Current Position =" + " " + playerPosition);
-
+//UC4 player wins the game
+        if (playerPosition == 100) {
+            System.out.println();
+            System.out.println("CONGRATULATION!! YOU WON THE GAME.");
+        }
         if (diceRoll == 0) {
 
             playerPosition = (byte) (playerPosition - diceRoll);
